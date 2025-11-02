@@ -185,26 +185,51 @@ const DragDrop = () => {
           </div>
         </div>
 
-        <div className="flex gap-4 justify-center flex-wrap">
-          <Button variant="outline" size="lg" onClick={handleReset}>
-            <RotateCcw className="mr-2 h-4 w-4" />
-            Reset Canvas
-          </Button>
-          <Button variant="outline" size="lg" onClick={handleCheckAnswers}>
-            <CheckCircle className="mr-2 h-4 w-4" />
-            Check Answers
-          </Button>
-          {activeStatement === "cash-flow" && (
-            <Button variant="outline" size="lg" onClick={() => setShowCashFlowStructure(true)}>
+        {/* Controls: for cash-flow show as centered 2x2 grid on small screens, otherwise inline */}
+        {activeStatement === "cash-flow" ? (
+          <div className="grid grid-cols-2 gap-4 justify-center items-center mx-auto max-w-xl">
+            <Button variant="outline" size="lg" className="w-full md:w-auto" onClick={handleReset}>
+              <RotateCcw className="mr-2 h-4 w-4" />
+              Reset Canvas
+            </Button>
+
+            <Button variant="outline" size="lg" className="w-full md:w-auto" onClick={handleCheckAnswers}>
+              <CheckCircle className="mr-2 h-4 w-4" />
+              Check Answers
+            </Button>
+
+            <Button variant="outline" size="lg" className="w-full md:w-auto" onClick={() => setShowCashFlowStructure(true)}>
               <BookOpen className="mr-2 h-4 w-4" />
               View Structure
             </Button>
-          )}
-          <Button size="lg" onClick={() => setShowSolutions(true)}>
-            <Eye className="mr-2 h-4 w-4" />
-            Show Solutions
-          </Button>
-        </div>
+
+            <Button size="lg" className="w-full md:w-auto" onClick={() => setShowSolutions(true)}>
+              <Eye className="mr-2 h-4 w-4" />
+              Show Solutions
+            </Button>
+          </div>
+        ) : (
+          <div className="flex gap-4 justify-center flex-wrap">
+            <Button variant="outline" size="lg" onClick={handleReset}>
+              <RotateCcw className="mr-2 h-4 w-4" />
+              Reset Canvas
+            </Button>
+            <Button variant="outline" size="lg" onClick={handleCheckAnswers}>
+              <CheckCircle className="mr-2 h-4 w-4" />
+              Check Answers
+            </Button>
+            {activeStatement === "cash-flow" && (
+              <Button variant="outline" size="lg" onClick={() => setShowCashFlowStructure(true)}>
+                <BookOpen className="mr-2 h-4 w-4" />
+                View Structure
+              </Button>
+            )}
+            <Button size="lg" onClick={() => setShowSolutions(true)}>
+              <Eye className="mr-2 h-4 w-4" />
+              Show Solutions
+            </Button>
+          </div>
+        )}
       </div>
 
       <SolutionsOverlay
