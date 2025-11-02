@@ -43,10 +43,15 @@ const DragDrop = () => {
     { id: "other-income", label: "Other Income and Expense", validTypes: ["Other Income and Expense"] },
   ];
 
+  // More granular zones for cash-flow mode, include final steps
   const cashFlowZones = [
-    { id: "operating", label: "Operating Activities", validTypes: ["Operating"] },
+    { id: "operating-direct", label: "Operating Activities — Direct", validTypes: ["Operating"] },
+    { id: "operating-indirect", label: "Operating Activities — Indirect", validTypes: ["Operating"] },
     { id: "investing", label: "Investing Activities", validTypes: ["Investing"] },
     { id: "financing", label: "Financing Activities", validTypes: ["Financing"] },
+    { id: "net-change", label: "Net increase (decrease) in cash", validTypes: ["Final"] },
+    { id: "opening", label: "Cash at beginning of period", validTypes: ["Final"] },
+    { id: "ending", label: "Cash at end of period", validTypes: ["Final"] },
   ];
 
   const getZones = () => {
@@ -68,7 +73,34 @@ const DragDrop = () => {
     } else if (activeStatement === "income-statement") {
       return accounts.filter((a) => a.financialStatement === "Income Statement");
     } else {
-      return accounts.filter((a) => a.financialStatement === "Statement of Cash Flows");
+      // Provide a curated set of cash-flow draggable options for the cash-flow builder
+      const cashFlowAccounts: Account[] = [
+        { accountTitle: "Cash received from customers", classification: "Operating", financialStatement: "Statement of Cash Flows", normalBalance: "Debit" },
+        { accountTitle: "Cash paid to suppliers and employees", classification: "Operating", financialStatement: "Statement of Cash Flows", normalBalance: "Credit" },
+        { accountTitle: "Interest paid/received (if core)", classification: "Operating", financialStatement: "Statement of Cash Flows", normalBalance: "Mixed" },
+        { accountTitle: "Taxes paid", classification: "Operating", financialStatement: "Statement of Cash Flows", normalBalance: "Credit" },
+        { accountTitle: "Adjustments for non-cash items (depreciation, amortization)", classification: "Operating", financialStatement: "Statement of Cash Flows", normalBalance: "None" },
+
+        { accountTitle: "Purchase of property, plant, and equipment (PPE)", classification: "Investing", financialStatement: "Statement of Cash Flows", normalBalance: "Credit" },
+        { accountTitle: "Sale of PPE", classification: "Investing", financialStatement: "Statement of Cash Flows", normalBalance: "Debit" },
+        { accountTitle: "Purchase of investments", classification: "Investing", financialStatement: "Statement of Cash Flows", normalBalance: "Credit" },
+        { accountTitle: "Sale of investments", classification: "Investing", financialStatement: "Statement of Cash Flows", normalBalance: "Debit" },
+        { accountTitle: "Loans given to others", classification: "Investing", financialStatement: "Statement of Cash Flows", normalBalance: "Credit" },
+        { accountTitle: "Loans collected from others", classification: "Investing", financialStatement: "Statement of Cash Flows", normalBalance: "Debit" },
+
+        { accountTitle: "Issuance of shares (equity)", classification: "Financing", financialStatement: "Statement of Cash Flows", normalBalance: "Credit" },
+        { accountTitle: "Repurchase of shares", classification: "Financing", financialStatement: "Statement of Cash Flows", normalBalance: "Debit" },
+        { accountTitle: "Borrowing money (debt)", classification: "Financing", financialStatement: "Statement of Cash Flows", normalBalance: "Credit" },
+        { accountTitle: "Repayment of debt", classification: "Financing", financialStatement: "Statement of Cash Flows", normalBalance: "Debit" },
+        { accountTitle: "Dividends paid", classification: "Financing", financialStatement: "Statement of Cash Flows", normalBalance: "Debit" },
+
+        // Final steps (targets)
+        { accountTitle: "(Target) Net increase (decrease) in cash", classification: "Final", financialStatement: "Statement of Cash Flows", normalBalance: "None" },
+        { accountTitle: "(Target) Cash at beginning of period", classification: "Final", financialStatement: "Statement of Cash Flows", normalBalance: "None" },
+        { accountTitle: "(Target) Cash at end of period", classification: "Final", financialStatement: "Statement of Cash Flows", normalBalance: "None" },
+      ];
+
+      return cashFlowAccounts;
     }
   };
 
