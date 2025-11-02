@@ -1,0 +1,373 @@
+{
+  "chartOfAccounts": [
+    {
+      "accountTitle": "Accounts Payable",
+      "classification": "Current Liability",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Accounts Receivable",
+      "classification": "Current Asset",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Accumulated Depreciation—Buildings",
+      "classification": "Plant Asset—Contra",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Accumulated Depreciation—Equipment",
+      "classification": "Plant Asset—Contra",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Administrative Expenses",
+      "classification": "Operating Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Advertising Expense",
+      "classification": "Operating Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Allowance for Doubtful Accounts",
+      "classification": "Current Asset—Contra",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Amortization Expense",
+      "classification": "Operating Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Bad Debt Expense",
+      "classification": "Operating Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Bonds Payable",
+      "classification": "Non-Current Liability",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Buildings",
+      "classification": "Plant Asset",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Cash",
+      "classification": "Current Asset",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Copyrights",
+      "classification": "Intangible Asset",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Cost of Goods Sold",
+      "classification": "Cost of Goods Sold",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Debt Investments",
+      "classification": "Current Asset/Long-Term Investment",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Depreciation Expense",
+      "classification": "Operating Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Dividend Revenue",
+      "classification": "Other Income and Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Dividends",
+      "classification": "Temporary account closed to Retained Earnings",
+      "financialStatement": "Retained Earnings Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Dividends Payable",
+      "classification": "Current Liability",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Equipment",
+      "classification": "Plant Asset",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Freight-Out",
+      "classification": "Operating Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Gain on Disposal of Plant Assets",
+      "classification": "Other Income and Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Goodwill",
+      "classification": "Intangible Asset",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Income Summary",
+      "classification": "Temporary account closed to Retained Earnings",
+      "financialStatement": "Not Applicable",
+      "normalBalance": null
+    },
+    {
+      "accountTitle": "Income Tax Expense",
+      "classification": "Income Tax Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Income Taxes Payable",
+      "classification": "Current Liability",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Insurance Expense",
+      "classification": "Operating Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Interest Expense",
+      "classification": "Other Income and Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Interest Payable",
+      "classification": "Current Liability",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Interest Receivable",
+      "classification": "Current Asset",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Interest Revenue",
+      "classification": "Other Income",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Inventory",
+      "classification": "Current Asset",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Land",
+      "classification": "Plant Asset",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Loss on Disposal of Plant Assets",
+      "classification": "Other Income and Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Maintenance and Repairs Expense",
+      "classification": "Operating Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Mortgage Payable",
+      "classification": "Non-Current Liability",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Notes Payable",
+      "classification": "Current Liability/Non-Current Liability",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Patents",
+      "classification": "Intangible Asset",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Prepaid Insurance",
+      "classification": "Current Asset",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Rent Expense",
+      "classification": "Operating Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Retained Earnings",
+      "classification": "Equity",
+      "financialStatement": "Statement of Financial Position and Retained Earnings Statement",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Salaries and Wages Expense",
+      "classification": "Operating Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Salaries and Wages Payable",
+      "classification": "Current Liability",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Sales Discounts",
+      "classification": "Revenue—Contra",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Sales Returns and Allowances",
+      "classification": "Revenue—Contra",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Sales Revenue",
+      "classification": "Revenue",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Selling Expenses",
+      "classification": "Operating Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Service Revenue",
+      "classification": "Revenue",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Share Capital—Ordinary",
+      "classification": "Equity",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Share Capital—Preference",
+      "classification": "Equity",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Share Investments",
+      "classification": "Current Asset/Long-Term Investment",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Share Premium—Ordinary",
+      "classification": "Equity",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Share Premium—Preference",
+      "classification": "Equity",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Supplies",
+      "classification": "Current Asset",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Supplies Expense",
+      "classification": "Operating Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Treasury Shares",
+      "classification": "Equity—Contra",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Debit"
+    },
+    {
+      "accountTitle": "Unearned Service Revenue",
+      "classification": "Current Liability",
+      "financialStatement": "Statement of Financial Position",
+      "normalBalance": "Credit"
+    },
+    {
+      "accountTitle": "Utilities Expense",
+      "classification": "Operating Expense",
+      "financialStatement": "Income Statement",
+      "normalBalance": "Debit"
+    }
+  ],
+  "metadata": {
+    "totalAccounts": 59,
+    "accountCategories": [
+      "Current Asset",
+      "Plant Asset",
+      "Intangible Asset",
+      "Current Liability",
+      "Non-Current Liability",
+      "Equity",
+      "Revenue",
+      "Operating Expense",
+      "Cost of Goods Sold",
+      "Other Income and Expense",
+      "Income Tax Expense"
+    ],
+    "financialStatements": [
+      "Statement of Financial Position",
+      "Income Statement",
+      "Retained Earnings Statement"
+    ]
+  }
+}
