@@ -119,5 +119,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    /* Global font changed to Comic Sans MS as requested */
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
   }
 }
