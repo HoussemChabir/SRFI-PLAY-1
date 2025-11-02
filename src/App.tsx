@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Flashcards from "./pages/Flashcards";
 import DragDrop from "./pages/DragDrop";
-import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,7 +20,6 @@ const App = () => (
           <Route path="/" element={<Home />} />
           <Route path="/flashcards" element={<Flashcards />} />
           <Route path="/drag-drop" element={<DragDrop />} />
-          <Route path="/auth" element={<Auth />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
