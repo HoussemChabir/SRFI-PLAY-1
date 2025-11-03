@@ -119,7 +119,8 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    /* Global font changed to Comic Sans MS as requested */
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    /* Global font changed to Century Gothic as requested */
+    /* Century Gothic may not be available on all systems; fallbacks provided */
+    font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
   }
 }
